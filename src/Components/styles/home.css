@@ -1,0 +1,13 @@
+.offers-container{
+    display: flex;
+    width: 40%;
+    height: auto; 
+    margin-left: 14%;
+    gap: 3%;
+    padding: 10px;
+    border-radius: 5px;
+}
+.offer_card{
+    box-shadow: 6px 6px 5px lightgray;
+}
+
