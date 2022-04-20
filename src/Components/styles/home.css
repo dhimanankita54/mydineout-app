@@ -11,3 +11,22 @@
     box-shadow: 6px 6px 5px lightgray;
 }
 
+.page-link{
+    display: flex;
+    background-color: rgb(231, 228, 228);
+    border-radius: 5px;
+    padding: 10px;
+    width: 21.5%;
+}
+.page-link>img{
+    width: 20%;
+    height:80%;
+}
+.section-link{
+    display: flex;
+    width: 72%;
+    margin-left: 11.5%;
+    justify-content: space-evenly;
+    padding: 40px;
+    gap: 0.5%;
+}
