@@ -1,0 +1,96 @@
+{
+  "nearme": [
+    {
+      "name": "Tamasha",
+      "img": "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/2/a/j/p20996-145631488756cd9a0796608.jpg?tr=tr:n-large",
+      "img2": "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/2/x/c/p20996-1484733974587f3e1682218.jpg?tr=tr:n-large",
+      "menu1": "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/2/m/u/m20996-164871922162457575137c6.jpg?tr=tr:n-xlarge",
+      "menu2": "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/2/k/d/m20996-16487192286245757ca4cbf.jpg?tr=tr:n-xlarge",
+      "menu3": "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/2/u/h/m20996-164871923562457583d8e85.jpg?tr=tr:n-xlarge",
+      "menu4": "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/2/e/s/m20996-1648719255624575978211f.jpg?tr=tr:n-xlarge",
+      "menu5": "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/2/x/m/m20996-1648719270624575a63015f.jpg?tr=tr:n-xlarge",
+      "price": "₹ 2,000 for 2",
+      "location": "Delhi",
+      "description": "Tamasha is one of the most popular places to hang out in Heart of Delhi-CP. This Restaurant has Distinct Seating Areas including a Courtyard, Ground Floor, First Floor, Backyard and an Amazing Rooftop over spacious ambience. Tamasha offers multi-cuisine dishes from North Indian, Italian, Continental and Asian cuisines and an array of Finger Food. Tamasha is an ideal place for a Night Out Friends or good times with Family Members. The eye-catching bar is built to resemble Optimus Prime, a fictional character from the Transformers Franchise. This is a super awesome place which is definitely worth going for one and all! ",
+      "rating": "4.2",
+      "reviews": "472",
+      "contact": "09999477661"
+    },
+    {
+      "name": "Unplugged Courtyard",
+      "img": "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/2/u/y/p20941-15700828565d959028e9f28.jpg?tr=tr:n-large",
+      "img2": "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/2/p/g/p20941-15378745145baa1a52c7093.jpg?tr=tr:n-large",
+      "menu1": "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/2/b/o/m20941-163835937761a761513fb3b.jpg?tr=tr:n-xlarge",
+      "menu2": "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/2/p/d/m20941-163835938461a76158806df.jpg?tr=tr:n-xlarge",
+      "menu3": "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/2/n/i/m20941-163835939161a7615fc432f.jpg?tr=tr:n-xlarge",
+      "menu4": "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/2/d/f/m20941-163835941361a76175d41d8.jpg?tr=tr:n-xlarge",
+      "menu5": "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/2/m/s/m20941-163835949261a761c449534.jpg?tr=tr:n-xlarge",
+      "price": "₹ 3,300 for 2 ",
+      "location": "Delhi",
+      "description": "Unplugged Courtyard is a specialty restaurant that is located in Connaught Place. It is a place for people who like to stick to their favorite cuisine and do not like to experiment much. Unplugged Courtyard respects their choice by offering well-prepared and mouth-watering North Indian and Continental cuisine. The place also holds a subtle ambiance paired up with a splendid outdoor seating that makes sure you land up at the same place when it comes to having your favorite cuisine in the most authentic form. An addition to the offering is a collection of signature spirits and a soothing live music. The nearest landmark is Odeon Cinema.  ",
+      "rating": "4",
+      "reviews": "213",
+      "contact": "09999477661"
+    },
+    {
+      "name": "The G.T. ROAD",
+      "img": "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/3/m/u/p31393-15972091555f337a43bb961.jpg?tr=tr:n-large",
+      "img2": "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/3/x/w/p31393-15972091655f337a4dd69b6.jpg?tr=tr:n-large",
+      "menu1": "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/3/w/a/m31393-1646213463621f39578440a.jpg?tr=tr:n-xlarge",
+      "menu2": "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/3/v/s/m31393-1646213470621f395e4d2fd.jpg?tr=tr:n-xlarge",
+      "menu3": "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/3/n/f/m31393-16455308776214cefda4a10.jpg?tr=tr:n-xlarge",
+      "menu4": "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/3/k/j/m31393-16455308856214cf0534440.jpg?tr=tr:n-xlarge",
+      "menu5": "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/3/e/z/m31393-16455308926214cf0cb40ef.jpg?tr=tr:n-xlarge",
+      "price": "₹ 1,400 for 2",
+      "location": "Delhi",
+      "description": "One of the best multi-cuisine restaurants in Connaught Place, The GT Road takes one on a gastronomical journey from Kabul to Chittagong. The restaurant serves Signature dishes stretching from Peshawar, Lahore, Kabul to the whole North Indian Frontier. The menu is affordable and the ambiance they offer is simple, nice, and elegant with modern cutting edge decor. This is a place for people who have that special deviation for smoked food and grilled items. The various aromatic spices and authentic ingredients they use to prepare the food are selected carefully by the chefs. The premium a la carte menu is in line with the varied tastes and preferences of the people and the elaborate buffet menu is perfect for large groups. The additional feature is the Live music performances hosted there. The G.T. ROAD is located in M Block Outer Circle, Connaught Place and is near an HDFC Bank.",
+      "rating": "4.3",
+      "reviews": "355",
+      "contact": "9871121428"
+    },
+    {
+      "name": "Ministry Of Beer",
+      "img": "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/3/a/d/p32381-1495943585592a49a166fe7.jpg?tr=tr:n-large",
+      "img2": "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/3/a/t/p32381-1495943675592a49fbcb857.jpg?tr=tr:n-large",
+      "menu1": "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/3/w/a/m32381-15466709495c305365aea3d.jpg?tr=tr:n-xlarge",
+      "menu2": "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/3/m/e/m32381-15466709575c30536d1669d.jpg?tr=tr:n-xlarge",
+      "menu3": "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/3/x/f/m32381-15466709645c30537490de5.jpg?tr=tr:n-xlarge",
+      "menu4": "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/3/c/w/m32381-15466709725c30537cbf3ed.jpg?tr=tr:n-xlarge",
+      "menu5": "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/3/k/f/m32381-15466710245c3053b06f90f.jpg?tr=tr:n-xlarge",
+      "price": "₹3,000 for 2",
+      "location": "Delhi",
+      "description": "Ministry of Beer is located at Outer Circle in Connaught Place- Heart of Delhi. It is a place where you will get a variety of drinks and an awesome ambiance. This place is an instant hit amongst youngsters and amongst people who wants to experience the nightlife. Ministry of Beer CP has a budget-friendly menu and serves mostly Finger food. The added feature is its Outdoor Seating. For all music lovers and for people who like to groove and move, there is no better place than Ministry of Beer CP.",
+      "rating": "4",
+      "reviews": "190",
+      "contact": "08800012060"
+    },
+    {
+      "name": "The Junkyard Cafe",
+      "img": "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/2/h/p/p20298-1447661865564991294ad1b.jpg?tr=tr:n-large",
+      "img2": "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/2/a/g/p20298-14476618475649911762a38.jpg?tr=tr:n-large",
+      "menu1": "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/2/d/n/m20298-1633338558615ac4be17be4.jpg?tr=tr:n-xlarge",
+      "menu2": "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/2/z/m/m20298-1633338624615ac5007e087.jpg?tr=tr:n-xlarge",
+      "menu3": "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/2/y/i/m20298-1633338634615ac50aa6471.jpg?tr=tr:n-xlarge",
+      "menu4": "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/2/e/q/m20298-1633338643615ac5138730a.jpg?tr=tr:n-xlarge",
+      "menu5": "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/2/v/b/m20298-1633338748615ac57cc1b2f.jpg?tr=tr:n-xlarge",
+      "price": "₹ 2,100 for 2",
+      "location": "Delhi",
+      "description": "The Junkyard Cafe is a small chain of casual dining resto-bars and lounges offering a rustic yet vibrant ambiance along with an eclectic bar menu serving an array of drinks and spirits making it a perfect place for people to enjoy the nightlife. The place offers an extensive food menu which is in line with the varied tastes and preferences of the diners and serves a variety of delicious Indian, Asian, and Mediterranean delicacies. The exclusive Hookah menu offers a range of flavorful and aromatic Sheeshas. This outlet is located in N Block, Connaught Place. The lounge provides a quirky environment with casual, colorful, and comfortable lounge and chairs. The additional feature is the beautiful open terrace area where one can have sumptuous food and amazing drinks while enjoying a spectacular view of the city. ",
+      "rating": "4.1",
+      "reviews": "390",
+      "contact": "09599947642"
+    }
+  ],
+  "featured": [
+
+  ],
+  "buffet" : [
+
+  ],
+  "pocket":[
+
+  ],
+  "mustvisit" : [
+    
+  ]
+}

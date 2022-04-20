@@ -1,29 +1,96 @@
-.available{
+.available, .footer-links {
     text-align: left;
 }
 
-.heading{
+.available{
+    padding: 30px;
+}
+
+.heading {
     margin-left: 14%;
 }
-.av_links{
+
+.av_links {
     display: flex;
     margin-left: 12%;
-    gap: 7%;
+    gap: 8.5%;
     color: grey;
 }
-.hr{
+
+.hr {
     width: 2%;
     height: 1px;
     margin: 0 5px;
     background-color: #FF645A;
     border: none;
 }
-.head{
+
+.section-hr {
+    width: 20%;
+    height: 1px;
+    margin: 0 5px;
+    background-color: #FF645A;
+    border: none;
+}
+
+.head {
     font-size: 15px;
     margin: 0;
     padding: 5px;
     color: #FF645A;
 }
-li{
+
+li {
     list-style: none;
+}
+
+.footer-links {
+    display: flex;
+    gap: 6%;
+    padding: 30px;
+}
+
+.about-head {
+    font-size: 15px;
+    margin: 0;
+    padding: 5px;
+    color: #FF645A;
+}
+
+.discover{
+    margin-left: 14%;
+}
+
+.dis_links {
+    text-align: left;
+    margin: 10px 2px;
+    color: grey;
+}
+.social-div{
+    display: flex;
+    margin-left: 46%;
+}
+
+.social-div>img{
+    width: 3%;
+    margin : 0 2px
+}
+.sep{
+    background-color: lightgrey;
+    border: none;
+    height: 1px;
+}
+.contact{
+    padding: 30px;
+}
+.contact-p>p{
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+}
+.contact-p>h6{
+    margin: 7px;
+    padding: 0;
+    font-size: 15px;
+    font-weight: normal;
 }
