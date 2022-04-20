@@ -2,47 +2,60 @@ import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import ItemsCarousel from "react-items-carousel";
 import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import ChevronRightOutlinedIcon from '@mui/icons-material/ChevronRightOutlined';
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import { storeData } from "./Redux/action";
+import "./styles/home.css"
 
 function NearMeCarousel() {
     const [active, setaAtive] = useState(0);
     const [activeItemIndex, setActiveItemIndex] = useState(0);
     const [coming, setcoming] = useState([]);
-    const chevronWidth = 120;
+    const chevronWidth = 210;
+
+    const dispatch = useDispatch();
 
     useEffect(() => {
-        getData();
+        fetch("http://localhost:3000/nearme")
+            .then((res) => res.json())
+            .then((res) => dispatch(storeData(res)))
+            .catch((err) => dispatch(err))
     }, [])
 
-    const getData = () => {
-        fetch("https://secure-tor-86460.herokuapp.com/ImdbOriginals")
-            .then((res) => res.json())
-            .then((data) => {
-                setcoming(data);
-            })
-    }
+    const data = useSelector((state) => state.data);
 
     return (
         <div>
-            <div className="head vl">
-                <h1 >IMDb Originals <ArrowForwardIosIcon
-              // sx={{ color: "#F5C519" }}
-              className="arrowColor"
-            /></h1>
+            <div className="head-near">
+                <h1 >Restaurants Near You </h1>
             </div>
-            <p className="head-p">Celebrity interviews, trending entertainment stories, and expert analysis</p>
-            <div style={{ padding: `0 ${chevronWidth}px` }}>
+            <div className= "main-div"style={{ padding: `0 ${chevronWidth}px` }}>
                 <ItemsCarousel
                     requestToChangeActive={setActiveItemIndex}
                     activeItemIndex={activeItemIndex}
-                    numberOfCards={3}
+                    numberOfCards={4}
                     gutter={10}
                     leftChevron={<button className="control-l">{'<'}</button>}
                     rightChevron={<button className="control-r">{'>'}</button>}
                     outsideChevron
                     chevronWidth={chevronWidth}
                 >
+
+                    {data.map((e) => (
+                        <div className="carousel-div">
+                            <img className="near-img" src={e.img}></img>
+                            <hr className="near-hr"></hr>
+                            <div className="near-content">
+                                <div className="near-des">
+                                    <h4>{e.name}</h4>
+                                    <p>{e.location}</p>
+                                </div>
+                                <button>{e.rating}</button>
+                            </div>
+                        </div>
+                    )
+                    )}
                 </ItemsCarousel>
             </div>
         </div>

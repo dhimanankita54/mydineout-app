@@ -1,8 +1,8 @@
-import STORE_DATA from './actionTypes';
+import { STORE_DATA } from './actionTypes';
 
 const storeData = (payload) => ({
     type: STORE_DATA,
-    payload : payload
+    payload: payload
 })
 
-export {storeData}
+export { storeData }

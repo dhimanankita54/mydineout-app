@@ -12,6 +12,7 @@ function App() {
       <ButtonAppBar />
       <ActionAreaCard />
       <Links />
+      <NearMeCarousel />
       <Footer />
     </div>
   );
