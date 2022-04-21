@@ -27,7 +27,7 @@ function Featured() {
         <div>
             <div className="head-near">
                 <h1 >Featured Restaurants</h1>
-                <p>See All</p>
+                {/* <p>See All</p> */}
             </div>
             <div className= "main-div"style={{ padding: `0 ${chevronWidth}px` }}>
                 <ItemsCarousel

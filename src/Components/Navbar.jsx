@@ -259,10 +259,16 @@ export default function PrimarySearchAppBar() {
                         aria-describedby="modal-modal-description"
                     >
                         <Box sx={style}>
-                            <Typography id="modal-modal-title" variant="h6" component="h2">
+                            <Typography id="modal-modal-title" variant="h6" component="h2" color="#FF645A" fontWeight="bolder">
                                 Login/SignUp
                             </Typography>
-                            <input type="text" className="modal-input" placeholder="Enter Mobile Number or Email"/>
+                            <input type="text" className="modal-input" placeholder="Enter Mobile Number or Email" />
+                            <Button variant="contained" className='submit_btn'>Continue</Button>
+                            <hr></hr>
+                            <div className="social_btn">
+                                <Button variant="contained" className='facebook_btn'>Facebook</Button>
+                                <Button variant="contained" className='google_btn'>Google</Button>
+                            </div>
                         </Box>
                     </Modal>
                     <Box sx={{ flexGrow: 1 }} />

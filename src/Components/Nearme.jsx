@@ -29,7 +29,7 @@ function NearMeCarousel() {
         <div>
             <div className="head-near">
                 <h1 >Restaurants Near You </h1>
-                <p>See All</p>
+                {/* <p>See All</p> */}
             </div>
             <div className= "main-div"style={{ padding: `0 ${chevronWidth}px` }}>
                 <ItemsCarousel

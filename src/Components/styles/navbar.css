@@ -6,3 +6,32 @@
     background-color: #FF645A !important; 
     font-weight: bolder !important;
 }
+.modal-input{
+    width: 95%;
+    height: 20px;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 1px solid grey;
+}
+.submit_btn{
+    background-color: #FF645A !important; 
+    font-weight: bolder !important;
+    width: 100%;
+    margin-bottom: 10px !important;
+}
+.facebook_btn{
+    font-weight: bolder !important;
+    width: 47%;
+    margin: 0 5px !important;
+}
+.google_btn{
+    background-color: white;
+    color: black;
+    font-weight: bolder !important;
+    width: 48%;
+    margin: 0 5px !important;
+}
+.google_btn:hover{
+    background-color: white;
+}
