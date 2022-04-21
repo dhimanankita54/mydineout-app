@@ -6,7 +6,8 @@ import { useDispatch, useSelector } from "react-redux";
 import ChevronRightOutlinedIcon from '@mui/icons-material/ChevronRightOutlined';
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import { storeData } from "./Redux/action";
-import "./styles/home.css"
+import "./styles/home.css";
+// import { useNavigate } from "react-router-dom";
 
 function NearMeCarousel() {
     const [active, setaAtive] = useState(0);
@@ -15,6 +16,7 @@ function NearMeCarousel() {
     const chevronWidth = 210;
 
     const dispatch = useDispatch();
+    // const navigate = useNavigate();
 
     useEffect(() => {
         fetch("http://localhost:3000/nearme")
@@ -31,7 +33,7 @@ function NearMeCarousel() {
                 <h1 >Restaurants Near You </h1>
                 {/* <p>See All</p> */}
             </div>
-            <div className= "main-div"style={{ padding: `0 ${chevronWidth}px` }}>
+            <div className= "main-div" style={{ padding: `0 ${chevronWidth}px` }}>
                 <ItemsCarousel
                     requestToChangeActive={setActiveItemIndex}
                     activeItemIndex={activeItemIndex}
@@ -42,9 +44,9 @@ function NearMeCarousel() {
                     outsideChevron
                     chevronWidth={chevronWidth}
                 >
-
+                    
                     {data.map((e) => (
-                        <div className="carousel-div">
+                        <div  className="carousel-div">
                             <img className="near-img" src={e.img}></img>
                             <hr className="near-hr"></hr>
                             <div className="near-content">

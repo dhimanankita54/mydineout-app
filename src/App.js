@@ -1,21 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
-import ButtonAppBar from "./Components/Navbar";
-import ActionAreaCard from './Components/Offers';
-import NearMeCarousel from './Components/Nearme';
-import { Footer } from './Components/Footer';
-import { Links } from './Components/Links';
-import Featured from './Components/Featured';
+import { Home } from "./Components/Home";
+import { Details } from "./Components/Details"
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <ButtonAppBar />
-      <ActionAreaCard />
-      <NearMeCarousel />
-      <Featured />
-      <Links />
-      <Footer />
+      <BrowserRouter>
+        <Routes>
+          <Route path={"/"} element={<Home />} />
+          <Route path={"./details/:name"} element={<Details />}></Route>
+        </Routes>
+      </BrowserRouter>
+      <Home />
     </div>
   );
 }
