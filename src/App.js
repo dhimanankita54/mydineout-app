@@ -5,14 +5,16 @@ import ActionAreaCard from './Components/Offers';
 import NearMeCarousel from './Components/Nearme';
 import { Footer } from './Components/Footer';
 import { Links } from './Components/Links';
+import Featured from './Components/Featured';
 
 function App() {
   return (
     <div className="App">
       <ButtonAppBar />
       <ActionAreaCard />
-      <Links />
       <NearMeCarousel />
+      <Featured />
+      <Links />
       <Footer />
     </div>
   );

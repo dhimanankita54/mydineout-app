@@ -10,6 +10,7 @@
 
 .offer_card {
     box-shadow: 6px 6px 5px lightgray;
+    border-radius: 5px;
 }
 
 .page-link {
@@ -34,9 +35,36 @@
     gap: 0.5%;
 }
 
+.control-l {
+    margin-right: -110%;
+    width: 50px;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FF645A;
+    background-color: rgb(236, 234, 234);
+    cursor: pointer;
+}
+
+.control-r {
+    margin-left: -110%;
+    width: 50px;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FF645A;
+    background-color: rgb(236, 234, 234);
+    cursor: pointer;
+}
+
 .carousel-div {
     border-radius: 5px;
-    height: 90%;
+    width: 97%;
+    height: 88%;
 }
 
 .carousel-div:hover {
@@ -46,11 +74,17 @@
 .head-near {
     text-align: left;
     margin-left: 14%;
+    margin-right: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+.head-near>p{
+    margin-top: 40px;
 }
 
 .near-img {
     width: 100%;
-    height: 50%;
+    height: 60%;
     object-fit: cover;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;

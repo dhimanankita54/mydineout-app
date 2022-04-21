@@ -8,7 +8,7 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import { storeData } from "./Redux/action";
 import "./styles/home.css"
 
-function NearMeCarousel() {
+function Featured() {
     const [active, setaAtive] = useState(0);
     const [activeItemIndex, setActiveItemIndex] = useState(0);
     const [coming, setcoming] = useState([]);
@@ -17,7 +17,7 @@ function NearMeCarousel() {
     const dispatch = useDispatch();
 
     useEffect(() => {
-        fetch("http://localhost:3000/nearme")
+        fetch("http://localhost:3000/featured")
             .then((res) => res.json())
             .then((res) => dispatch(storeData(res)))
             .catch((err) => dispatch(err))
@@ -28,7 +28,7 @@ function NearMeCarousel() {
     return (
         <div>
             <div className="head-near">
-                <h1 >Restaurants Near You </h1>
+                <h1 >Featured Restaurants</h1>
                 <p>See All</p>
             </div>
             <div className= "main-div"style={{ padding: `0 ${chevronWidth}px` }}>
@@ -63,4 +63,4 @@ function NearMeCarousel() {
     )
 }
 
-export default NearMeCarousel;
+export default Featured;
