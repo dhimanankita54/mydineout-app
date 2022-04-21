@@ -5,6 +5,8 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { storeData } from "./Redux/action";
 import "./styles/home.css";
+import { Link } from "react-router-dom";
+
 // import { useNavigate } from "react-router-dom";
 
 function Featured() {
@@ -53,15 +55,17 @@ function Featured() {
                         })
                             .map((e, index) => (
                                 <div key={index} className="carousel-div">
-                                    <img className="near-img" src={e.img}></img>
-                                    <hr className="near-hr"></hr>
-                                    <div className="near-content">
-                                        <div className="near-des">
-                                            <h4>{e.name}</h4>
-                                            <p>{e.location}</p>
+                                    <Link to={{ pathname: `/details/${e.name}` }}>
+                                        <img className="near-img" src={e.img}></img>
+                                        <hr className="near-hr"></hr>
+                                        <div className="near-content">
+                                            <div className="near-des">
+                                                <h4>{e.name}</h4>
+                                                <p>{e.location}</p>
+                                            </div>
+                                            <button>{e.rating}</button>
                                         </div>
-                                        <button>{e.rating}</button>
-                                    </div>
+                                    </Link>
                                 </div>
                             )
                             )}

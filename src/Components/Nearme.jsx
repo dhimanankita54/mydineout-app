@@ -5,14 +5,15 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { storeData } from "./Redux/action";
 import "./styles/home.css";
-// import { useNavigate } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function NearMeCarousel() {
     const [activeItemIndex, setActiveItemIndex] = useState(0);
     const chevronWidth = 210;
 
     const dispatch = useDispatch();
-    // const navigate = useNavigate();
+
 
     useEffect(() => {
         fetch("http://localhost:3000/nearme")
@@ -53,15 +54,17 @@ function NearMeCarousel() {
                         })
                             .map((e, index) => (
                                 <div key={index} className="carousel-div">
-                                    <img className="near-img" src={e.img}></img>
-                                    <hr className="near-hr"></hr>
-                                    <div className="near-content">
-                                        <div className="near-des">
-                                            <h4>{e.name}</h4>
-                                            <p>{e.location}</p>
+                                    <Link to={{ pathname: `/details/${e.name}` }}>
+                                        <img className="near-img" src={e.img}></img>
+                                        <hr className="near-hr"></hr>
+                                        <div className="near-content">
+                                            <div className="near-des">
+                                                <h4>{e.name}</h4>
+                                                <p>{e.location}</p>
+                                            </div>
+                                            <button>{e.rating}</button>
                                         </div>
-                                        <button>{e.rating}</button>
-                                    </div>
+                                    </Link>
                                 </div>
                             )
                             )}
