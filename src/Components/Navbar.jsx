@@ -12,6 +12,7 @@ import Menu from '@mui/material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 import "./styles/navbar.css";
 import Button from '@mui/material/Button';
+import Modal from '@mui/material/Modal';
 
 
 const Search = styled('div')(({ theme }) => ({
@@ -59,9 +60,13 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 export default function PrimarySearchAppBar() {
     const [anchorEl, setAnchorEl] = React.useState(null);
     const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
+    const [open, setOpen] = React.useState(false);
 
     const isMenuOpen = Boolean(anchorEl);
     const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
+
+    const handleOpen = () => setOpen(true);
+    const handleClose = () => setOpen(false);
 
     const handleProfileMenuOpen = (event) => {
         setAnchorEl(event.currentTarget);
@@ -78,6 +83,18 @@ export default function PrimarySearchAppBar() {
 
     const handleMobileMenuOpen = (event) => {
         setMobileMoreAnchorEl(event.currentTarget);
+    };
+
+    const style = {
+        position: 'absolute',
+        top: '50%',
+        left: '50%',
+        transform: 'translate(-50%, -50%)',
+        width: 400,
+        bgcolor: 'background.paper',
+        border: '2px solid #000',
+        boxShadow: 24,
+        p: 4,
     };
 
     const menuId = 'primary-search-account-menu';
@@ -158,7 +175,7 @@ export default function PrimarySearchAppBar() {
         <Box sx={{ flexGrow: 1 }}>
             <AppBar position="static" color="">
                 <Toolbar sx={{ width: "80%", marginLeft: "13%" }}>
-                    <img className = "logo" src='https://im1.dineout.co.in/images/uploads/misc/2019/Jul/25/website-logo.png'/>
+                    <img className="logo" src='https://im1.dineout.co.in/images/uploads/misc/2019/Jul/25/website-logo.png' />
                     <Search>
                         <SearchIconWrapper>
                             <SearchIcon />
@@ -234,7 +251,20 @@ export default function PrimarySearchAppBar() {
                     >
                         Blog
                     </Typography>
-                    <Button variant="contained" className='login_btn'>Login</Button>
+                    <Button variant="contained" onClick={handleOpen} className='login_btn'>Login</Button>
+                    <Modal
+                        open={open}
+                        onClose={handleClose}
+                        aria-labelledby="modal-modal-title"
+                        aria-describedby="modal-modal-description"
+                    >
+                        <Box sx={style}>
+                            <Typography id="modal-modal-title" variant="h6" component="h2">
+                                Login/SignUp
+                            </Typography>
+                            <input type="text" className="modal-input" placeholder="Enter Mobile Number or Email"/>
+                        </Box>
+                    </Modal>
                     <Box sx={{ flexGrow: 1 }} />
                     <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
                     </Box>
