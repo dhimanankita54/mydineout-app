@@ -30,7 +30,7 @@ function Featured() {
                 <h1 >Featured Restaurants</h1>
                 {/* <p>See All</p> */}
             </div>
-            <div className= "main-div" style={{ padding: `0 ${chevronWidth}px` }}>
+            <div className="main-div" style={{ padding: `0 ${chevronWidth}px` }}>
                 <ItemsCarousel
                     requestToChangeActive={setActiveItemIndex}
                     activeItemIndex={activeItemIndex}
@@ -43,28 +43,28 @@ function Featured() {
                 >
 
                     {
-                    data.filter((e) => {
-                        if(location === ""){
-                            return e;
-                        }
-                        else {
-                            return e.location.toLowerCase().includes(location.toLowerCase());
-                        }
-                    })
-                    .map((e, index) => (
-                        <div key={index} className="carousel-div">
-                            <img className="near-img" src={e.img}></img>
-                            <hr className="near-hr"></hr>
-                            <div className="near-content">
-                                <div className="near-des">
-                                    <h4>{e.name}</h4>
-                                    <p>{e.location}</p>
+                        data.filter((e) => {
+                            if (location === "") {
+                                return e;
+                            }
+                            else {
+                                return e.location.toLowerCase().includes(location.toLowerCase());
+                            }
+                        })
+                            .map((e, index) => (
+                                <div key={index} className="carousel-div">
+                                    <img className="near-img" src={e.img}></img>
+                                    <hr className="near-hr"></hr>
+                                    <div className="near-content">
+                                        <div className="near-des">
+                                            <h4>{e.name}</h4>
+                                            <p>{e.location}</p>
+                                        </div>
+                                        <button>{e.rating}</button>
+                                    </div>
                                 </div>
-                                <button>{e.rating}</button>
-                            </div>
-                        </div>
-                    )
-                    )}
+                            )
+                            )}
                 </ItemsCarousel>
             </div>
         </div>

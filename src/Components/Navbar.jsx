@@ -66,10 +66,7 @@ export default function PrimarySearchAppBar() {
 
 
     const dispatch = useDispatch();
-
-    React.useEffect(() => {
-       const location = dispatch(locationText(input));
-    },[input])
+    const location = dispatch(locationText(input));
 
     const style = {
         position: 'absolute',
