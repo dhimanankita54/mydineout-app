@@ -4,15 +4,15 @@ import ItemsCarousel from "react-items-carousel";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { storeData } from "./Redux/action";
-import "./styles/home.css"
+import "./styles/home.css";
+// import { useNavigate } from "react-router-dom";
 
 function Featured() {
-    const [active, setaAtive] = useState(0);
     const [activeItemIndex, setActiveItemIndex] = useState(0);
-    const [coming, setcoming] = useState([]);
     const chevronWidth = 210;
 
     const dispatch = useDispatch();
+    // const navigate = useNavigate();
 
     useEffect(() => {
         fetch("http://localhost:3000/featured")
@@ -22,6 +22,7 @@ function Featured() {
     }, [])
 
     const data = useSelector((state) => state.data);
+    var location = useSelector((state) => state.location);
 
     return (
         <div>
@@ -29,7 +30,7 @@ function Featured() {
                 <h1 >Featured Restaurants</h1>
                 {/* <p>See All</p> */}
             </div>
-            <div className= "main-div"style={{ padding: `0 ${chevronWidth}px` }}>
+            <div className= "main-div" style={{ padding: `0 ${chevronWidth}px` }}>
                 <ItemsCarousel
                     requestToChangeActive={setActiveItemIndex}
                     activeItemIndex={activeItemIndex}
@@ -41,8 +42,17 @@ function Featured() {
                     chevronWidth={chevronWidth}
                 >
 
-                    {data.map((e) => (
-                        <div className="carousel-div">
+                    {
+                    data.filter((e) => {
+                        if(location === ""){
+                            return e;
+                        }
+                        else {
+                            return e.location.toLowerCase().includes(location.toLowerCase());
+                        }
+                    })
+                    .map((e, index) => (
+                        <div key={index} className="carousel-div">
                             <img className="near-img" src={e.img}></img>
                             <hr className="near-hr"></hr>
                             <div className="near-content">

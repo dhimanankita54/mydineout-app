@@ -3,17 +3,14 @@ import { styled, alpha } from '@mui/material/styles';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import InputBase from '@mui/material/InputBase';
-import Badge from '@mui/material/Badge';
-import MenuItem from '@mui/material/MenuItem';
-import Menu from '@mui/material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 import "./styles/navbar.css";
 import Button from '@mui/material/Button';
 import Modal from '@mui/material/Modal';
 import { useDispatch, useSelector } from 'react-redux';
+import { locationText } from './Redux/action';
 
 
 const Search = styled('div')(({ theme }) => ({
@@ -61,9 +58,18 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 export default function PrimarySearchAppBar() {
     const [anchorEl, setAnchorEl] = React.useState(null);
     const [open, setOpen] = React.useState(false);
+    const [input, setInput] = React.useState("");
 
     const handleOpen = () => setOpen(true);
-    const handleClose = () => setOpen(false); 
+    const handleClose = () => setOpen(false);
+
+
+
+    const dispatch = useDispatch();
+
+    React.useEffect(() => {
+       const location = dispatch(locationText(input));
+    },[input])
 
     const style = {
         position: 'absolute',
@@ -87,10 +93,14 @@ export default function PrimarySearchAppBar() {
                             <SearchIcon />
                         </SearchIconWrapper>
                         <StyledInputBase
+                            onChange={(e) => {
+                                setInput(e.target.value);
+                            }}
                             placeholder="Location..."
                             inputProps={{ 'aria-label': 'location' }}
                         />
                     </Search>
+
                     <Typography
                         variant="h6"
                         color="black"
