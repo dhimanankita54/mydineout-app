@@ -3,8 +3,6 @@ import ReactDOM from "react-dom";
 import ItemsCarousel from "react-items-carousel";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import ChevronRightOutlinedIcon from '@mui/icons-material/ChevronRightOutlined';
-import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import { storeData } from "./Redux/action";
 import "./styles/home.css"
 
