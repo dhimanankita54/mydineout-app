@@ -8,6 +8,7 @@ import { Buffet } from './Components/Buffet';
 import {Pocket} from "./Components/Pocket";
 import {MustVisit} from "./Components/MustVisit";
 import {New} from "./Components/New";
+import {BuffetDetails} from "./Components/BuffetDetails"
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route exact path={"/"} element={<Home />} />
           <Route path={"/details/:id"} element={<Details />}></Route>
+          <Route path={"/buffetdetails/:id"} element={<BuffetDetails />}></Route>
           <Route path={'/buffet'} element={<Buffet/>}></Route>
           <Route path={'/pocket'} element={<Pocket/>}></Route>
           <Route path={'/mustVisit'} element={<MustVisit/>}></Route>

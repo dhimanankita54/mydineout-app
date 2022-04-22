@@ -1,13 +1,12 @@
 import { useEffect, useState } from "react";
 import { useParams, useLocation } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { storeData } from "./Redux/action";
+import { buffet } from "./Redux/action";
 import PrimarySearchAppBar from "./Navbar";
 import { Footer } from './Footer';
-import "./styles/details.css";
-import Button from '@mui/material/Button';
+import "./styles/details.css"
 
-export const Details = () => {
+export const BuffetDetails = () => {
 
     const params = useParams();
     const dispatch = useDispatch();
@@ -15,14 +14,14 @@ export const Details = () => {
     console.log(id)
 
     useEffect(() => {
-        fetch(`http://localhost:3000/nearme`)
+        fetch(`http://localhost:3000/buffet`)
             .then((res) => res.json())
-            .then((res) => dispatch(storeData(res)))
+            .then((res) => dispatch(buffet(res)))
             .catch((err) => dispatch(err))
     }, [])
 
 
-    const data = useSelector((state) => state.data);
+    const data = useSelector((state) => state.buffet);
 
     // useEffect(() => {
     //    let newArr = data.filter((e) => e.name === name);
@@ -58,7 +57,7 @@ export const Details = () => {
                                 </div>
                                 <h3>Contact Us: {e.contact}</h3>
                             </div>
-                            <Button variant="contained" className='book_btn'>Facebook</Button>
+
                         </div>
                     ))
             }
