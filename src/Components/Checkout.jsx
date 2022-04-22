@@ -4,9 +4,6 @@ import PrimarySearchAppBar from './Navbar';
 import './styles/checkout.css';
 import { DatePicker, Space } from 'antd';
 import 'antd/dist/antd.css';
-import Button from '@mui/material/Button';
-
-
 
 export const Checkout = () => {
 
