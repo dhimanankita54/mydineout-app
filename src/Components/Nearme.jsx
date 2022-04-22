@@ -54,7 +54,7 @@ function NearMeCarousel() {
                         })
                             .map((e, index) => (
                                 <div key={index} className="carousel-div">
-                                    <Link to={{ pathname: `/details/${e.name}`, state: data }}>
+                                    <Link to={{ pathname: `/details/${e.id}`, state: data }}>
                                         <img className="near-img" src={e.img}></img>
                                         <hr className="near-hr"></hr>
                                         <div className="near-content">

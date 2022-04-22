@@ -55,7 +55,7 @@ function Featured() {
                         })
                             .map((e, index) => (
                                 <div key={index} className="carousel-div">
-                                    <Link to={{ pathname: `/details/${e.name}` }}>
+                                    <Link to={{ pathname: `/details/${e.id}` }}>
                                         <img className="near-img" src={e.img}></img>
                                         <hr className="near-hr"></hr>
                                         <div className="near-content">

@@ -1,0 +1,29 @@
+.img-div{
+    display: flex;
+}
+.img-div>img{
+    width: 30%;
+    margin: 20px;
+    border-radius: 5px;
+}
+.img-cap{
+    text-align: left;
+    margin: 0 20px;
+}
+.img-cap>p{
+    margin:0;
+    padding: 0;
+}
+.abt{
+    font-weight: normal;
+    margin: 10px 0 5px 0;
+}
+
+.menu-div{
+    display: flex;
+    gap: 2%;
+}
+.menu-img{
+    width: 17%;
+    height: 400px;
+}
