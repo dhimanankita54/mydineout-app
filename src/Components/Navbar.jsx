@@ -13,6 +13,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { locationText } from './Redux/action';
 import { Link } from 'react-router-dom';
 
+
 const Search = styled('div')(({ theme }) => ({
     position: 'relative',
     border: "1px solid black",
@@ -57,13 +58,8 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 
 export default function PrimarySearchAppBar() {
     const [anchorEl, setAnchorEl] = React.useState(null);
-    const [open, setOpen] = React.useState(false);
+   
     const [input, setInput] = React.useState("");
-
-    const handleOpen = () => setOpen(true);
-    const handleClose = () => setOpen(false);
-
-
 
     const dispatch = useDispatch();
     const location = dispatch(locationText(input));
@@ -84,7 +80,7 @@ export default function PrimarySearchAppBar() {
         <Box sx={{ flexGrow: 1 }}>
             <AppBar position="static" color="">
                 <Toolbar sx={{ width: "80%", marginLeft: "13%" }}>
-                    <Link to={{pathname: "/"}}><img className="logo" src='https://im1.dineout.co.in/images/uploads/misc/2019/Jul/25/website-logo.png' /></Link>
+                    <Link to={{ pathname: "/" }}><img className="logo" src='https://im1.dineout.co.in/images/uploads/misc/2019/Jul/25/website-logo.png' /></Link>
                     <Search>
                         <SearchIconWrapper>
                             <SearchIcon />
@@ -97,93 +93,7 @@ export default function PrimarySearchAppBar() {
                             inputProps={{ 'aria-label': 'location' }}
                         />
                     </Search>
-
-                    {/* <Typography
-                        variant="h6"
-                        color="black"
-                        fontSize="15px"
-                        margin="20px    "
-                        noWrap
-                        component="div"
-                        sx={{ display: { xs: 'none', sm: 'block' } }}
-                    >
-                        Home
-                    </Typography>
-                    <Typography
-                        variant="h6"
-                        color="black"
-                        fontSize="15px"
-                        margin="20px "
-                        noWrap
-                        component="div"
-                        sx={{ display: { xs: 'none', sm: 'block' } }}
-                    >
-                        Book a Table
-                    </Typography>
-                    <Typography
-                        variant="h6"
-                        color="black"
-                        fontSize="15px"
-                        margin="20px"
-                        noWrap
-                        component="div"
-                        sx={{ display: { xs: 'none', sm: 'block' } }}
-                    >
-                        Dineout Pay
-                    </Typography>
-                    <Typography
-                        variant="h6"
-                        color="black"
-                        fontSize="15px"
-                        margin="20px "
-                        noWrap
-                        component="div"
-                        sx={{ display: { xs: 'none', sm: 'block' } }}
-                    >
-                        Events
-                    </Typography>
-                    <Typography
-                        variant="h6"
-                        color="black"
-                        fontSize="15px"
-                        margin="20px "
-                        noWrap
-                        component="div"
-                        sx={{ display: { xs: 'none', sm: 'block' } }}
-                    >
-                        Super Saver
-                    </Typography>
-                    <Typography
-                        variant="h6"
-                        color="black"
-                        fontSize="15px"
-                        margin="20px"
-                        noWrap
-                        component="div"
-                        sx={{ display: { xs: 'none', sm: 'block' } }}
-                    >
-                        Blog
-                    </Typography> */}
-                    <Button variant="contained" onClick={handleOpen} className='login_btn'>Login</Button>
-                    <Modal
-                        open={open}
-                        onClose={handleClose}
-                        aria-labelledby="modal-modal-title"
-                        aria-describedby="modal-modal-description"
-                    >
-                        <Box sx={style}>
-                            <Typography id="modal-modal-title" variant="h6" component="h2" color="#FF645A" fontWeight="bolder">
-                                Login/SignUp
-                            </Typography>
-                            <input type="text" className="modal-input" placeholder="Enter Mobile Number or Email" />
-                            <Button variant="contained" className='submit_btn'>Continue</Button>
-                            <hr></hr>
-                            <div className="social_btn">
-                                <Button variant="contained" className='facebook_btn'>Facebook</Button>
-                                <Button variant="contained" className='google_btn'>Google</Button>
-                            </div>
-                        </Box>
-                    </Modal>
+                   <Link to={{pathname: "/login"}}> <Button variant="contained"  className='login_btn'>Login</Button></Link>
                     <Box sx={{ flexGrow: 1 }} />
                     <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
                     </Box>

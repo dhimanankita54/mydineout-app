@@ -1,15 +1,14 @@
-import { STORE_DATA, SEARCH_LOCATION, BUFFET } from './actionTypes';
+import { STORE_DATA, SEARCH_LOCATION, BUFFET, REGISTER_FAIL, REGISTER_SUCCESS, LOGIN_FAIL, LOGIN_SUCCESS,ADD_USER } from './actionTypes';
 import { v4 as uuid } from "uuid"
 
 const storeData = (payload) => ({
-    id: uuid(),
     type: STORE_DATA,
     payload: payload
 })
 
 const locationText = (text) => ({
     type: SEARCH_LOCATION,
-    text : text
+    text: text
 })
 
 const buffet = (payload) => ({
@@ -17,4 +16,15 @@ const buffet = (payload) => ({
     payload: payload
 })
 
-export { storeData, locationText , buffet}
+const add_user_action = (user) => ({
+    type: ADD_USER,
+    payload: user
+})
+
+const login = (email, password) => ({
+    type: LOGIN_SUCCESS,
+    email: email,
+    password: password
+})
+
+export { storeData, locationText, buffet, add_user_action, login }

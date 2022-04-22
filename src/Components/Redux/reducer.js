@@ -3,6 +3,13 @@ const initState = {
     data: [],
     location: "",
     buffet: [],
+    isLoggedIn: false,
+    addUser : {
+        name: "",
+        email: "",
+        password:""
+    }
+
 }
 
 const reducer = (state = initState, action) => {
@@ -14,8 +21,11 @@ const reducer = (state = initState, action) => {
         case "SEARCH_LOCATION":
             return { ...state, location: action.text }
 
-        case "BUFFET" : 
-            return {...state, buffet : action.payload}
+        case "BUFFET":
+            return { ...state, buffet: action.payload }
+
+        case "ADD_USER":
+            return { ...state, addUser: action.payload}
 
         default:
             return state;
