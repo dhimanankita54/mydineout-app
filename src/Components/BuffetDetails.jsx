@@ -16,7 +16,7 @@ export const BuffetDetails = () => {
     console.log(id)
 
     useEffect(() => {
-        fetch(`http://localhost:3000/buffet`)
+        fetch("https://json-server-dineout.herokuapp.com/buffet")
             .then((res) => res.json())
             .then((res) => dispatch(buffet(res)))
             .catch((err) => dispatch(err))

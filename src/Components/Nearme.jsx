@@ -16,7 +16,7 @@ function NearMeCarousel() {
 
 
     useEffect(() => {
-        fetch("http://localhost:3000/nearme")
+        fetch("https://json-server-dineout.herokuapp.com/nearme")
             .then((res) => res.json())
             .then((res) => dispatch(storeData(res)))
             .catch((err) => dispatch(err))

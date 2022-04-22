@@ -17,7 +17,7 @@ function Featured() {
     // const navigate = useNavigate();
 
     useEffect(() => {
-        fetch("http://localhost:3000/featured")
+        fetch("https://json-server-dineout.herokuapp.com/featured")
             .then((res) => res.json())
             .then((res) => dispatch(storeData(res)))
             .catch((err) => dispatch(err))
