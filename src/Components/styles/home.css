@@ -13,12 +13,12 @@
     border-radius: 5px;
 }
 
-.page-link {
+a>.page-link {
     display: flex;
     background-color: rgb(231, 228, 228);
     border-radius: 5px;
     padding: 10px;
-    width: 21.5%;
+    width: 100%;
 }
 
 .page-link>img {

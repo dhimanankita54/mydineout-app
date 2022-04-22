@@ -1,7 +1,8 @@
 
 const initState = {
     data: [],
-    location: ""
+    location: "",
+    buffet: [],
 }
 
 const reducer = (state = initState, action) => {
@@ -12,6 +13,9 @@ const reducer = (state = initState, action) => {
 
         case "SEARCH_LOCATION":
             return { ...state, location: action.text }
+
+        case "BUFFET" : 
+            return {...state, buffet : action.payload}
 
         default:
             return state;

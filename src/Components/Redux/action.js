@@ -1,4 +1,4 @@
-import { STORE_DATA, SEARCH_LOCATION } from './actionTypes';
+import { STORE_DATA, SEARCH_LOCATION, BUFFET } from './actionTypes';
 import { v4 as uuid } from "uuid"
 
 const storeData = (payload) => ({
@@ -12,4 +12,9 @@ const locationText = (text) => ({
     text : text
 })
 
-export { storeData, locationText }
+const buffet = (payload) => ({
+    type: BUFFET,
+    payload: payload
+})
+
+export { storeData, locationText , buffet}
