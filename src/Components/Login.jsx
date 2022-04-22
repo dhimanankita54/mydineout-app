@@ -21,20 +21,20 @@ export const Login = () => {
         setUser({ ...user, [e.target.name]: e.target.value });
     }
 
-    const UserEmail = useSelector((state) => state.addUser.email)
-    const UserPassword = useSelector((state) => state.addUser.password)
+    const User = useSelector((state) => state.addUser)
+    console.log(User.email)
 
     const handleSubmit = () => {
         const { email, password } = user;
 
         if (
-            UserEmail === email &&
-            UserPassword === password
+            User.email === email &&
+            User.password === password
         ) {
             navigate("/")
         } else {
-            console.log("email or password is wrong!");
-            console.log(store.getState().add_user_action);
+            alert("email or password is wrong!");
+            navigate('/signup')
         }
     };
 
