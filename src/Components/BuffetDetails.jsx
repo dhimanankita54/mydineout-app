@@ -4,7 +4,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { buffet } from "./Redux/action";
 import PrimarySearchAppBar from "./Navbar";
 import { Footer } from './Footer';
-import "./styles/details.css"
+import "./styles/details.css";
+import Button from '@mui/material/Button';
+import {Link} from 'react-router-dom'
 
 export const BuffetDetails = () => {
 
@@ -61,6 +63,7 @@ export const BuffetDetails = () => {
                         </div>
                     ))
             }
+            <Link to={{ pathname: "/checkout" }}><Button variant="contained" className='book_btn'>Book Now</Button></Link>
             <Footer />
         </div >
     )

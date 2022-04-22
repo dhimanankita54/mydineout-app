@@ -11,7 +11,7 @@ import Button from '@mui/material/Button';
 import Modal from '@mui/material/Modal';
 import { useDispatch, useSelector } from 'react-redux';
 import { locationText } from './Redux/action';
-
+import { Link } from 'react-router-dom';
 
 const Search = styled('div')(({ theme }) => ({
     position: 'relative',
@@ -84,7 +84,7 @@ export default function PrimarySearchAppBar() {
         <Box sx={{ flexGrow: 1 }}>
             <AppBar position="static" color="">
                 <Toolbar sx={{ width: "80%", marginLeft: "13%" }}>
-                    <img className="logo" src='https://im1.dineout.co.in/images/uploads/misc/2019/Jul/25/website-logo.png' />
+                    <Link to={{pathname: "/"}}><img className="logo" src='https://im1.dineout.co.in/images/uploads/misc/2019/Jul/25/website-logo.png' /></Link>
                     <Search>
                         <SearchIconWrapper>
                             <SearchIcon />
@@ -98,7 +98,7 @@ export default function PrimarySearchAppBar() {
                         />
                     </Search>
 
-                    <Typography
+                    {/* <Typography
                         variant="h6"
                         color="black"
                         fontSize="15px"
@@ -163,7 +163,7 @@ export default function PrimarySearchAppBar() {
                         sx={{ display: { xs: 'none', sm: 'block' } }}
                     >
                         Blog
-                    </Typography>
+                    </Typography> */}
                     <Button variant="contained" onClick={handleOpen} className='login_btn'>Login</Button>
                     <Modal
                         open={open}

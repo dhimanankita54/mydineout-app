@@ -6,6 +6,7 @@ import PrimarySearchAppBar from "./Navbar";
 import { Footer } from './Footer';
 import "./styles/details.css";
 import Button from '@mui/material/Button';
+import {Link} from "react-router-dom"
 
 export const Details = () => {
 
@@ -58,7 +59,7 @@ export const Details = () => {
                                 </div>
                                 <h3>Contact Us: {e.contact}</h3>
                             </div>
-                            <Button variant="contained" className='book_btn'>Facebook</Button>
+                           <Link to={{pathname: "/checkout"}}><Button variant="contained" className='book_btn'>Book Now</Button></Link> 
                         </div>
                     ))
             }

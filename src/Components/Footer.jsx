@@ -110,7 +110,7 @@ export const Footer = () => {
             </div>
             <hr className="sep"></hr>
             <div className="contact">
-                <img className="logo" src='https://im1.dineout.co.in/images/uploads/misc/2019/Jul/25/website-logo.png' />
+                <img className="foot-logo" src='https://im1.dineout.co.in/images/uploads/misc/2019/Jul/25/website-logo.png' />
                 <div className="contact-p">
                     <p>Find the best Restaurants, Deals, Discounts & Offers</p>
                     <h6>Contact: +91-9212340202</h6>

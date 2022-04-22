@@ -9,6 +9,7 @@ import {Pocket} from "./Components/Pocket";
 import {MustVisit} from "./Components/MustVisit";
 import {New} from "./Components/New";
 import {BuffetDetails} from "./Components/BuffetDetails"
+import { Checkout } from './Components/Checkout';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path={'/pocket'} element={<Pocket/>}></Route>
           <Route path={'/mustVisit'} element={<MustVisit/>}></Route>
           <Route path={'/new'} element={<New/>}></Route>
+          <Route path={'/checkout'} element={<Checkout/>}></Route>
         </Routes>
       </BrowserRouter>
     </div>
