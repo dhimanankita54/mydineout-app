@@ -79,9 +79,9 @@ export default function PrimarySearchAppBar() {
     return (
         <Box sx={{ flexGrow: 1 }}>
             <AppBar position="static" color="">
-                <Toolbar sx={{ width: "80%", marginLeft: "13%" }}>
+                <Toolbar className="toolbar" sx={{ width: "80%", marginLeft: "13%" }}>
                     <Link to={{ pathname: "/" }}><img className="logo" src='https://im1.dineout.co.in/images/uploads/misc/2019/Jul/25/website-logo.png' /></Link>
-                    <Search>
+                    <Search className="searchbar">
                         <SearchIconWrapper>
                             <SearchIcon />
                         </SearchIconWrapper>
@@ -89,6 +89,7 @@ export default function PrimarySearchAppBar() {
                             onChange={(e) => {
                                 setInput(e.target.value);
                             }}
+                            
                             placeholder="Location..."
                             inputProps={{ 'aria-label': 'location' }}
                         />

@@ -142,3 +142,54 @@ a{
     color: white;
     background-color: #8cbb0f;
 }
+
+@media (min-width : 320px) and (max-width: 480px) {
+    .offers-container {
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin-left: 0.5%;
+        gap: 3%;
+        padding: 10px;
+        border-radius: 5px;
+    } 
+    .offer_card {
+        height: 100px;
+        box-shadow: 6px 6px 5px lightgray;
+        border-radius: 5px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px){
+    .offers-container {
+        display: flex;
+        width: 70%;
+        height: auto;
+        margin-left: 7%;
+        gap: 3%;
+        padding: 10px;
+        border-radius: 5px;
+    } 
+    .offer_card {
+        height: 100px;
+        box-shadow: 6px 6px 5px lightgray;
+        border-radius: 5px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .offers-container {
+        display: flex;
+        width: 70%;
+        height: auto;
+        margin-left: 12%;
+        gap: 3%;
+        padding: 10px;
+        border-radius: 5px;
+    } 
+    .offer_card {
+        height: 100px;
+        box-shadow: 6px 6px 5px lightgray;
+        border-radius: 5px;
+    }
+}
