@@ -158,6 +158,20 @@ a{
         box-shadow: 6px 6px 5px lightgray;
         border-radius: 5px;
     }
+    .main-div{
+        padding: 0 10px !important;
+        height: 150px;
+        margin-top: 20px;
+    }
+    .carousel-div{
+        height: 70%;
+    }
+    .head-near{
+        margin-left: 5%;
+    }
+    .head-near>h1{
+        font-size: 20px;
+    }
 }
 
 @media (min-width: 481px) and (max-width: 767px){
@@ -175,6 +189,14 @@ a{
         box-shadow: 6px 6px 5px lightgray;
         border-radius: 5px;
     }
+    .main-div{
+        padding: 0 60px !important;
+        height: 150px;
+        margin-top: 20px;
+    }
+    .carousel-div{
+        height: 70%;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1024px){
@@ -188,8 +210,16 @@ a{
         border-radius: 5px;
     } 
     .offer_card {
-        height: 100px;
+        height: 200px;
         box-shadow: 6px 6px 5px lightgray;
         border-radius: 5px;
+    }
+    .main-div{
+        padding: 0 120px !important;
+        height: 150px;
+        margin-top: 20px;
+    }
+    .carousel-div{
+        height: 70%;
     }
 }

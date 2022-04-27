@@ -19,6 +19,7 @@ a>.login_btn{
     .toolbar{
         margin-left: 7% !important;
     }
+    
 }
 
 @media (min-width: 481px) and (max-width: 767px){
@@ -31,6 +32,7 @@ a>.login_btn{
     .toolbar{
         margin-left: 7% !important;
     }
+    
 }
 
 @media (min-width: 768px) and (max-width: 1024px){
@@ -43,5 +45,6 @@ a>.login_btn{
     .toolbar{
         margin-left: 10% !important;
     }
+    
 }
 
