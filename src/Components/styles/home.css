@@ -78,7 +78,8 @@ a>.page-link {
     display: flex;
     justify-content: space-between;
 }
-.head-near>p{
+
+.head-near>p {
     margin-top: 40px;
 }
 
@@ -94,9 +95,10 @@ a>.page-link {
     text-align: left;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    
+
 }
-a{
+
+a {
     text-decoration: none;
     color: black;
 }
@@ -152,29 +154,67 @@ a{
         gap: 3%;
         padding: 10px;
         border-radius: 5px;
-    } 
+    }
+
     .offer_card {
         height: 100px;
         box-shadow: 6px 6px 5px lightgray;
         border-radius: 5px;
     }
-    .main-div{
+
+    .main-div {
         padding: 0 10px !important;
-        height: 150px;
+        height: 200px;
         margin-top: 20px;
     }
-    .carousel-div{
-        height: 70%;
+
+    .carousel-div {
+        height: 90%;
     }
-    .head-near{
+
+    .head-near {
         margin-left: 5%;
     }
-    .head-near>h1{
+
+    .near-img {
+        width: 100%;
+        height: 35%;
+        object-fit: cover;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    .head-near>h1 {
         font-size: 20px;
+    }
+
+    .near-content>button {
+        visibility: hidden;
+    }
+
+    a>.page-link {
+        margin: 3px;
+        width: 100%;
+        height: 80px;
+        display: block;
+        padding: 20px;
+    }
+
+    .page-link>img {
+        width: 50%;
+        height: 80%;
+    }
+
+    .section-link {
+        display: grid;
+        grid-template-columns: repeat(2, 45%);
+        width: 100%;
+        margin-left: 0.2%;
+        padding: 10px;
     }
 }
 
-@media (min-width: 481px) and (max-width: 767px){
+@media (min-width: 481px) and (max-width: 767px) {
     .offers-container {
         display: flex;
         width: 70%;
@@ -183,23 +223,67 @@ a{
         gap: 3%;
         padding: 10px;
         border-radius: 5px;
-    } 
+    }
+
     .offer_card {
         height: 100px;
         box-shadow: 6px 6px 5px lightgray;
         border-radius: 5px;
     }
-    .main-div{
+
+    .main-div {
         padding: 0 60px !important;
         height: 150px;
         margin-top: 20px;
     }
-    .carousel-div{
+
+    .carousel-div {
         height: 70%;
+    }
+
+    .head-near {
+        margin-left: 10%;
+    }
+
+    .near-img {
+        width: 100%;
+        height: 45%;
+        object-fit: cover;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    .head-near>h1 {
+        font-size: 20px;
+    }
+
+    .near-content>button {
+        visibility: hidden;
+    }
+
+    a>.page-link {
+        margin: 3px;
+        width: 100%;
+        height: 80px;
+        display: block;
+        padding: 20px;
+    }
+
+    .page-link>img {
+        width: 40%;
+        height: 80%;
+    }
+
+    .section-link {
+        display: grid;
+        grid-template-columns: repeat(2, 45%);
+        width: 100%;
+        margin-left: 0.2%;
+        padding: 10px;
     }
 }
 
-@media (min-width: 768px) and (max-width: 1024px){
+@media (min-width: 768px) and (max-width: 1024px) {
     .offers-container {
         display: flex;
         width: 70%;
@@ -208,18 +292,61 @@ a{
         gap: 3%;
         padding: 10px;
         border-radius: 5px;
-    } 
+    }
+
     .offer_card {
         height: 200px;
         box-shadow: 6px 6px 5px lightgray;
         border-radius: 5px;
     }
-    .main-div{
+
+    .main-div {
         padding: 0 120px !important;
         height: 150px;
         margin-top: 20px;
     }
-    .carousel-div{
+
+    .carousel-div {
         height: 70%;
+    }
+
+    .head-near {
+        margin-left: 10%;
+    }
+
+    .near-img {
+        width: 100%;
+        height: 50%;
+        object-fit: cover;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    .head-near>h1 {
+        font-size: 20px;
+    }
+
+    .near-content>button {
+        visibility: hidden;
+    }
+
+    a>.page-link {
+        display: block;
+        width: 150%;
+        height: 130px;
+    }
+
+    .page-link>img {
+        width: 40%;
+        height: 80%;
+    }
+
+    .section-link {
+        /* display: grid;
+        grid-template-columns: repeat(2, 38%); */
+        margin-top: 30px;
+        width: 90%;
+        margin-left: 2%;
+        padding: 10px;
     }
 }
