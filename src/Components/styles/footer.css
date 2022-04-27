@@ -2,7 +2,7 @@
     text-align: left;
 }
 
-.available{
+.available {
     padding: 30px;
 }
 
@@ -57,7 +57,7 @@ li {
     color: #FF645A;
 }
 
-.discover{
+.discover {
     margin-left: 14%;
 }
 
@@ -66,102 +66,120 @@ li {
     margin: 10px 2px;
     color: grey;
 }
-.social-div{
+
+.social-div {
     display: flex;
     margin-left: 46%;
 }
 
-.social-div>img{
+.social-div>img {
     width: 3%;
-    margin : 0 2px
+    margin: 0 2px
 }
-.sep{
+
+.sep {
     background-color: lightgrey;
     border: none;
     height: 1px;
 }
-.contact{
+
+.contact {
     padding: 30px;
 }
-.contact-p>p{
+
+.contact-p>p {
     margin: 0;
     padding: 0;
     font-size: 13px;
 }
-.contact-p>h6{
+
+.contact-p>h6 {
     margin: 7px;
     padding: 0;
     font-size: 15px;
     font-weight: normal;
 }
-@media (min-width : 320px) and (max-width: 480px){
+
+@media (min-width : 320px) and (max-width: 480px) {
     .heading {
         margin-left: -7%;
     }
+
     .av_links {
         display: flex;
         margin-left: -10%;
         gap: 0%;
         color: grey;
     }
-    .av_links>ul{
+
+    .av_links>ul {
         left: -22%;
         padding: 4px;
     }
+
     .footer-links {
         display: flex;
         gap: 1%;
         padding: 8px;
     }
-    .discover{
+
+    .discover {
         margin-left: -2%;
     }
 }
 
-@media (min-width: 481px) and (max-width: 767px){
+@media (min-width: 481px) and (max-width: 767px) {
     .heading {
         margin-left: 0%;
     }
+
     .av_links {
         display: flex;
         margin-left: 0%;
         gap: 0%;
         color: grey;
     }
-    .av_links>ul{
+
+    .av_links>ul {
         left: -20%;
         padding: 10px;
     }
+
     .footer-links {
         display: flex;
         gap: 2%;
         padding: 10px;
     }
-    .discover{
+
+    .discover {
         margin-left: 3%;
     }
 }
 
-@media (min-width: 768px) and (max-width: 1023px){
+@media (min-width: 768px) and (max-width: 1023px) {
     .heading {
         margin-left: 3%;
     }
+
     .av_links {
         display: flex;
         margin-left: 3%;
         gap: 0%;
         color: grey;
     }
-    .av_links>ul{
+
+    .av_links>ul {
         left: -20%;
         padding: 10px;
     }
+
     .footer-links {
         display: flex;
         gap: 2%;
         padding: 10px;
     }
-    .discover{
+
+    .discover {
         margin-left: 6%;
     }
 }

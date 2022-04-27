@@ -48,7 +48,8 @@ export const Details = () => {
                             <div className="img-cap">
                                 <h3>{e.name}</h3>
                                 <p>{e.price} | {e.location}</p>
-                                <p><h3 className="abt">About: </h3>{e.description}</p>
+                                <h3 className="abt">About: </h3>
+                                <p className="desc">{e.description}</p>
                                 <h3>Menu:</h3>
                                 <div className="menu-div">
                                     <img className="menu-img" src={e.menu1} />
@@ -57,7 +58,7 @@ export const Details = () => {
                                     <img className="menu-img" src={e.menu4} />
                                     <img className="menu-img" src={e.menu5} />
                                 </div>
-                                <h3>Contact Us: {e.contact}</h3>
+                                <h3 className="contact">Contact Us: {e.contact}</h3>
                             </div>
                            <Link to={{pathname: "/checkout"}}><Button variant="contained" className='book_btn'>Book Now</Button></Link> 
                         </div>
