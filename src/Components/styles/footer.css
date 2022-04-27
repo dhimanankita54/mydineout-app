@@ -96,25 +96,25 @@ li {
 }
 @media (min-width : 320px) and (max-width: 480px){
     .heading {
-        margin-left: 0%;
+        margin-left: -7%;
     }
     .av_links {
         display: flex;
-        margin-left: 0%;
+        margin-left: -10%;
         gap: 0%;
         color: grey;
     }
     .av_links>ul{
         left: -22%;
-        padding: 8px;
+        padding: 4px;
     }
     .footer-links {
         display: flex;
-        gap: 2%;
-        padding: 10px;
+        gap: 1%;
+        padding: 8px;
     }
     .discover{
-        margin-left: 7%;
+        margin-left: -2%;
     }
 }
 
@@ -142,6 +142,26 @@ li {
     }
 }
 
-@media (min-width: 768px) and (max-width: 1024px){
-
+@media (min-width: 768px) and (max-width: 1023px){
+    .heading {
+        margin-left: 3%;
+    }
+    .av_links {
+        display: flex;
+        margin-left: 3%;
+        gap: 0%;
+        color: grey;
+    }
+    .av_links>ul{
+        left: -20%;
+        padding: 10px;
+    }
+    .footer-links {
+        display: flex;
+        gap: 2%;
+        padding: 10px;
+    }
+    .discover{
+        margin-left: 6%;
+    }
 }
