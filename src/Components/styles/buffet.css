@@ -1,23 +1,23 @@
-
-.container{
-   display: grid;
-   grid-template-columns: repeat(3, 30%);
-   gap: 2%;
-   margin: 60px 150px;
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    gap: 2%;
+    margin: 60px 150px;
 }
 
-.buffet-head{
+.buffet-head {
     font-size: 40px;
 }
 
-.buffet-div{
+.buffet-div {
     width: 100%;
     border-radius: 5px;
 }
 
-.buffet-div:hover{
+.buffet-div:hover {
     box-shadow: 5px 5px 5px #888;
 }
+
 .buffet-content {
     display: flex;
     justify-content: space-between;
@@ -38,20 +38,58 @@
     background-color: #8cbb0f;
 }
 
-.buffet-img{
+.buffet-img {
     width: 100%;
     height: 60%;
     object-fit: cover;
     border-radius: 5px;
 }
-.buffet-hr{
+
+.buffet-hr {
     margin: 0;
     border: none;
     height: 1px;
     background-color: #FF645A;
 }
-.buffet-des>h4, .buffet-des>p{
+
+.buffet-des>h4, .buffet-des>p {
     margin: 0;
     padding: 0;
     text-align: left;
+}
+
+@media (min-width : 320px) and (max-width: 480px) {
+    .buffet-content>button{
+        visibility: hidden;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 30%);
+        gap: 4%;
+        margin: 40px 10px 100px 10px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .buffet-content>button{
+        visibility: hidden;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 30%);
+        gap: 4%;
+        margin: 40px 10px 100px 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .buffet-content>button{
+        visibility: hidden;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 30%);
+        gap: 4%;
+        margin: 40px 60px 100px 60px;
+    }
 }
