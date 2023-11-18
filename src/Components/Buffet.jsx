@@ -5,16 +5,14 @@ import { Link } from "react-router-dom";
 import "./styles/buffet.css";
 import PrimarySearchAppBar from "./Navbar";
 import { Footer } from "./Footer";
+import datajs from "../db.json";
 
 export const Buffet = () => {
 
     const dispatch = useDispatch();
 
     useEffect(() => {
-        fetch("https://json-server-dineout.herokuapp.com/buffet")
-            .then((res) => res.json())
-            .then((res) => dispatch(buffet(res)))
-            .catch((err) => dispatch(err))
+        dispatch(buffet(datajs.buffet))
     }, [])
 
     const data = useSelector((state) => state.buffet);

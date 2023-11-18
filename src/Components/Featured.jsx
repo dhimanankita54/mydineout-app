@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { storeData } from "./Redux/action";
 import "./styles/home.css";
 import { Link } from "react-router-dom";
+import datajs from "../db.json";
 
 // import { useNavigate } from "react-router-dom";
 
@@ -17,10 +18,7 @@ function Featured() {
     // const navigate = useNavigate();
 
     useEffect(() => {
-        fetch("https://json-server-dineout.herokuapp.com/featured")
-            .then((res) => res.json())
-            .then((res) => dispatch(storeData(res)))
-            .catch((err) => dispatch(err))
+        dispatch(storeData(datajs.featured))
     }, [])
 
     const data = useSelector((state) => state.data);
